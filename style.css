@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* Reset de base */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+html, body {
+    height: 2300px; /* Assure que le body occupe toute la hauteur */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center; /* Centre le contenu horizontalement */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden; /* Empêche le débordement du header */
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column; /* Logo et titre en colonne */
+    align-items: center; /* Centre logo et titre horizontalement */
+    margin-bottom: 15px; /* Espace entre le logo et la nav */
+}
+
+header .logo img {
+    max-width: 100px; /* Ajustez la taille du logo */
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments de navigation en colonne */
+    margin-bottom: 15px; /* Espace entre la nav et le menu toggle */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 10px 0; /* Espacement vertical entre les éléments de menu */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Carrousel d'Images */
+.carousel {
+    margin-top: 100px; /* Ajuste pour l'espace sous l'en-tête fixe */
+    position: relative;
+    overflow: hidden; /* Empêche le débordement horizontal du carrousel */
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Catégories de Produits */
+.categories, .featured-products {
+    padding: 20px;
+}
+
+.categories h2, .featured-products h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.category, .product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category img, .product img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Taille d'image ajustée pour mobile */
+}
+
+.category p, .product h3 {
+    margin: 10px 0;
+}
+
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px; /* Largeur maximale pour la colonne des produits */
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Assurer que le contenu principal occupe toute la hauteur disponible */
+.main-content {
+    padding-bottom: 100px; /* Ajoute un padding pour éviter que le footer ne recouvre le contenu */
+}
